@@ -1,0 +1,17 @@
+mat-card-header {
+    display: inline-block;
+}
+
+h2{
+    color: rgb(168, 90, 105);
+    top: auto;
+}
+mat-card-actions {
+    text-align: center;
+}
+mat-card-actions button {
+    margin-bottom: 10px !important;
+}
+mat-card-actions button:hover {
+    border: 1px solid #fa8f8f;
+}

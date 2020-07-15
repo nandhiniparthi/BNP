@@ -1,0 +1,26 @@
+
+mat-card-header {
+    display: block;
+}
+
+mat-card-header .mat-card-container {
+    float: right;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-left: -5px !important;
+    text-align: center;
+}
+section.results {
+    display: block;
+    clear: both;
+}
+section.results h3 {
+    text-align: center;
+}
+
+section.results section.statistics h3, section.results section.statistics span, section.results section.statistics .quiz-feedback, section.results section.statistics div span {
+    text-align: center;
+}
+section.results section.statistics span {
+    display: block;
+}

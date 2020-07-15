@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <div class="mat-card-container">
+        <mat-card-subtitle><h2>Results</h2></mat-card-subtitle>
+      </div>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <section class="results">
+        <section class="statistics">
+          <span>You scored {{ correctAnswersCount }} out of {{ totalQuestions }} questions correctly.</span>
+         <div class="quiz-feedback">
+            <div *ngIf="percentage >= 80">
+              <h3>Great job! </h3>
+            </div>
+            <div *ngIf="percentage >= 60 && percentage < 80">
+              <h3>Not bad! </h3>
+            </div>
+            <div *ngIf="percentage < 60">
+              <h3>Try again! </h3>
+            </div>
+            <span >You scored {{ percentage }}% correct.</span>
+          </div>
+        </section> 
+      </section>
+      <hr />  
+    </mat-card-content>
+  </mat-card>
+  

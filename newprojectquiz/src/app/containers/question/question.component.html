@@ -1,0 +1,47 @@
+<mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <div class="mat-card-container">
+      </div>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <section class="scoreboard">
+        <div class="row">
+          <div class="score">
+            <span class="leader">Score</span>
+            <span class="scoreboard">
+              {{ correctAnswersCount }}/{{ totalQuestions }}
+            </span>
+          </div>
+          <div class="badge" *ngIf="question && question.questionId <= totalQuestions">
+            <span>Question {{ question.questionId }} of {{ totalQuestions }}</span>
+          </div>
+          
+        </div>
+      </section>
+  
+      <section id="question">{{ question.questionText }}</section>
+  
+      <codelab-quiz-question  [question]="question"></codelab-quiz-question>
+    </mat-card-content>
+  
+    <mat-card-footer>
+      <section class="paging">
+        <mat-card-actions>
+         
+          <div class="nextQuestionNav" *ngIf="question && question.questionId !== totalQuestions">
+            <button type="button" [disabled]="disabled" (click)="navigateToNextQuestion()">
+              Next &raquo;
+            </button>
+          </div>
+          <div class="showScoreNav" *ngIf="question && question.questionId === totalQuestions">
+            <button type="button" (click)="navigateToResults()">
+              Show Your Score
+            </button>
+          </div>
+        </mat-card-actions>
+      </section>
+    </mat-card-footer>
+  </mat-card>
+  

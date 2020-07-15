@@ -1,0 +1,84 @@
+mat-card-header {
+    display: block;
+}
+section.scoreboard {
+    margin-top: 10px !important;
+}
+section.scoreboard .row {
+    display: inline;
+}
+section.scoreboard .score {
+    float: left;
+    margin-left: 1rem;
+}
+section.scoreboard .score .leader {
+    margin-left: 15px;
+}
+section.scoreboard .badge {
+    float: left;
+    margin: 20px 10px 0 100px;
+    font-family: Space Mono, monospace;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+section.scoreboard .scoreboard {
+    
+    font-weight: 900;
+    font-size: 30px;
+    color: #4aaed6;
+    display: inline-block;
+    margin: -5px 0 0 15px;
+    width: auto;
+}
+section.scoreboard .leader {
+    display: block;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    top: -5px;
+}
+section#question {
+    font-family: Space Mono, monospace;
+    font-weight: 700;
+    font-size: 30px !important;
+    margin: 0 0 10px 0.4rem;
+    float: left;
+    border: 2px solid #83300a;
+    padding: 5px 10px 15px 20px;
+    background-color: #f5f5f5;
+    color: #aa6906;
+    width: 39rem !important;
+    height: auto;
+    vertical-align: middle;
+}
+section.paging {
+    width: 40rem;
+}
+section.paging mat-card-actions {
+    margin: -10px 0 10px 0;
+}
+section.paging mat-card-actions .nextQuestionNav {
+    float: right;
+    margin-right: -0.4rem;
+}
+section.paging mat-card-actions .showScoreNav {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+section.paging mat-card-actions .nextQuestionNav:hover, section.paging mat-card-actions .showScoreNav:hover {
+    border: 1px solid #83590a;
+}
+
+mat-card-content .codelab-quiz-question{
+    vertical-align: auto;
+    text-align: center;
+}
+
+
+
+
+
