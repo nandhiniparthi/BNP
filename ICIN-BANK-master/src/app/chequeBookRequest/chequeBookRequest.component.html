@@ -1,0 +1,29 @@
+<body class="container">
+<div class="container-fluid">
+<h1 class="blockquote text-center text-info">Cheque Book Requests List</h1>
+<br>
+<table class="table table-striped">
+	<thead>
+		<tr class="text-info">
+			<th>*Request Id*</th>
+			<th>*Date*</th>
+			<th>*User Name*</th>
+			<th>*Description*</th>
+			<th>*Action*</th>
+			<th>*Confirmed?*</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let chequeBookRequest of chequeBookRequestList" class="text-secondary">
+			<td>{{chequeBookRequest.id}}</td>
+			<td>{{chequeBookRequest.date | date: 'MM/dd/yyyy - hh:mm'}}</td>
+			<td>{{chequeBookRequest.user.username}}</td>
+			<td>{{chequeBookRequest.description}}</td>
+			<td [hidden]="chequeBookRequest.confirmed"><a (click)="confirmChequeBookRequest(chequeBookRequest.id)" style="cursor: pointer;">Confirm</a></td>
+			<td>{{chequeBookRequest.confirmed}}</td>
+			<!-- <td [hidden]="!user.enabled"><a (click)="disableUser(user.username)" style="cursor: pointer;">Disable</a></td> -->
+		</tr>
+	</tbody>
+</table>   
+</div>
+</body>

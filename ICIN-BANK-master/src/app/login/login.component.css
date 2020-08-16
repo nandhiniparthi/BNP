@@ -1,0 +1,24 @@
+
+  .container {
+    font-family: "Roboto", sans-serif; 
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+    background: #7becdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #7becdd, #7becdd);
+  background: -moz-linear-gradient(right, #7becdd, #7becdd);
+  background: -o-linear-gradient(right, #7becdd, #7becdd);
+  background: linear-gradient(to left, #7becdd, #7becdd);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
