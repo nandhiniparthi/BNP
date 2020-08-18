@@ -1,5 +1,44 @@
 .text{
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    justify-content: center;
+    /* font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    justify-content: center; */
+    font-variant-alternates: stylistic(-ms-flexbox);
+    font-size: medium;
+    font-synthesis: style;
+    font-family: fantasy;
+    font-weight: bolder;
+    line-height: 1.42857143;
+    color: brown;
+    /* background: url("https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80") no-repeat center center fixed; */
+    /* background:tomato; */
+    background-size: cover;
+    box-sizing: initial;
+    
+}
+.image{
+    background: url("https://images.unsplash.com/photo-1462206092226-f46025ffe607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80") no-repeat center center fixed; 
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: cornsilk;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    /* font-family: revert; */
+    font-weight: 800;
+    line-height: 2;
+    font-size: 30px;
+    font-style: oblique;
+    font-family: auto;
+    color: lightcoral;
     
 }
